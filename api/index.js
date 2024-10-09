@@ -59,7 +59,7 @@ async function getLatestPrice() {
   }
 }
 
-app.get('/carv', async (req, res) => {
+app.get('/api/', async (req, res) => {
   try {
     // Fetch total supply and latest price concurrently
     const [totalSupply, latestPrice] = await Promise.all([getTotalSupply(), getLatestPrice()]);
